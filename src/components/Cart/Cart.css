@@ -1,0 +1,15 @@
+.cart{
+    border:2px solid slateblue;
+    border-radius:.5rem;
+    padding:.5rem;
+}
+
+.remove-btn{
+    padding:.5rem 1rem;
+    background: red;
+    border-radius:.5rem;
+    font-weight:700;
+    border:none;
+    color:#fff;
+    cursor: pointer;
+}

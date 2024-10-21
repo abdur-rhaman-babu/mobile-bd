@@ -1,7 +1,7 @@
-/* eslint-disable react/prop-types */
 import './Mobile.css'
+import  PropTypes  from 'prop-types';
 const Mobile = ({mobile, handleAddToCart}) => {
-    // console.log(mobile)
+    
     const {brand, image, price} = mobile;
     return (
         <div className='mobile'>
@@ -17,5 +17,10 @@ const Mobile = ({mobile, handleAddToCart}) => {
         </div>
     );
 };
+
+Mobile.propTypes = {
+    mobile: PropTypes.object.isRequired,
+    handleAddToCart: PropTypes.func.isRequired
+}
 
 export default Mobile;
