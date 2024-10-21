@@ -1,0 +1,18 @@
+
+.mobile{
+    border:2px solid steelblue;
+    border-radius:.5rem;
+    padding:1rem;
+}
+
+.add-cart{
+    padding:.5rem 1rem;
+    margin-top:.5rem;
+    background: steelblue;
+    border:none;
+    font-size:1rem;
+    font-weight:700;
+    color:#fff;
+    border-radius:.5rem;
+    cursor:pointer;
+}
