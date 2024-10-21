@@ -32,8 +32,12 @@ const Mobiles = () => {
 
   const handleAddToCart = (mobile) => {
     const newAddCart = [...addCart, mobile];
-    setAddCart(newAddCart);
-    addToLS(mobile.id);
+    if (addCart.indexOf(mobile) === -1){
+      setAddCart(newAddCart);
+      addToLS(mobile.id);
+    }else{
+      alert('This data already added')
+    }
   };
 
   const handleRemoveFromCart = (id) =>{
